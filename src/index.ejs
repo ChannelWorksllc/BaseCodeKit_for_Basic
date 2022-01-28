@@ -1,0 +1,35 @@
+<%_ const path='./'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <%- include('./_component/_head', {path:path,meta:data.meta['home'],})%>
+    </head>
+<body>
+<%- include('./_component/_header',{path:path,}) %>
+
+<main>
+<section>
+    <!-- container query sample -->
+    <div class="weather-wrap">
+        <dl class="weather">
+            <div>
+            <dt>Sunday</dt>
+            <dd>
+                <b>26°</b> 7°
+            </dd>
+            </div>
+            <div>
+            <dt>Monday</dt>
+            <dd>
+                <b>34°</b> 11°
+            </dd>
+            </div>
+        </dl>
+    </div>
+    <!-- /container query sample -->
+</section>
+</main>
+
+<%- include('./_component/_footer',{path:path,}) %>
+</body>
+</html>

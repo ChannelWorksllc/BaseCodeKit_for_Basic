@@ -1,0 +1,15 @@
+{
+    "data": {
+        "meta": {
+            "home": {
+                "title": "サイトタイトル",
+                "description": "サイト説明文"
+            },
+            "about": {
+                "title": "ページタイトル",
+                "description": "ページ説明文",
+                "url": "about"
+            }
+        }
+    }
+}

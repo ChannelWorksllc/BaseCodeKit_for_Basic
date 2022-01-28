@@ -1,0 +1,36 @@
+version: "2"
+services:
+  db:
+    image: mysql:5.7
+    container_name: "my-wordpress-db"
+    volumes:
+      - "db-data:/var/lib/mysql"
+    networks:
+      - my_wordpress_network
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+  wordpress:
+    image: wordpress:latest
+    container_name: "edu.style"
+    volumes:
+      - "$PWD:/var/www/html"
+      - "$PWD/.docker/backup:/tmp/backup"
+      - "$PWD/.docker/log:/tmp/log"
+    ports:
+      - "8002:80"
+    depends_on:
+      - db
+    networks:
+      - my_wordpress_network
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+volumes:
+  db-data:
+networks:
+  my_wordpress_network:

@@ -1,0 +1,20 @@
+.weather-wrap {
+    container: inline-size / weather-wrapper;
+    /* containerはショートハンド */
+    /* container-type: inline-size; */
+    /* container-name: weather-wrapper; */
+
+    /* テスト用に、デスクトップ上でリサイズハンドルを取得するために、下記を定義 */
+    /* resize: both; */
+    /* overflow: hidden; */
+}
+
+.weather {
+    display: flex;
+}
+
+@container weather-wrapper size(max-width: 700px) {
+    .weather {
+        flex-direction: column;
+    }
+}

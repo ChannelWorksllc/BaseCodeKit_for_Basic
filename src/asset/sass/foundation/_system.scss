@@ -1,0 +1,68 @@
+/* system
+--------------------------- */
+
+// color system
+// ---------------------
+$c-base: #efefef;
+$c-base-sub: #fff;
+$c-body: #333;
+$c-accent: #ca6060;
+
+// transition
+// ---------------------
+@mixin transition-base($second: 0.4s) {
+    transition: all $second;
+}
+
+// content max-width
+// ---------------------
+@mixin content-maxwidth($px: 1200px) {
+    max-width: $px;
+}
+
+// font system
+// ---------------------
+@mixin garamond($weight: bold) {
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    font-weight: $weight;
+}
+
+// Google Font Awesome
+// ---------------------
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+// responsive system
+// ---------------------
+@mixin breakpoint($point) {
+    @if $point == sp {
+        @media (max-width: 880px) {
+            @content;
+        }
+    }
+    @if $point == pc {
+        @media (min-width: 881px) {
+            @content;
+        }
+    }
+}
+
+.sp-only {
+    display: inline-block;
+
+    @include breakpoint(pc) {
+        display: none;
+    }
+}
+
+.pc-only {
+    display: inline-block;
+
+    @include breakpoint(sp) {
+        display: none;
+    }
+}

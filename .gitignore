@@ -1,3 +1,4 @@
+node_modules/*
 docs/wordpress/*
 !docs/wordpress/docker-compose.yml
 !docs/wordpress/wp-content/
