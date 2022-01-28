@@ -1,0 +1,7 @@
+docs/wordpress/*
+!docs/wordpress/docker-compose.yml
+!docs/wordpress/wp-content/
+docs/wordpress/wp-content/*
+!docs/wordpress/wp-content/themes/
+docs/wordpress/wp-content/themes/*
+!docs/wordpress/wp-content/themes/sample/
