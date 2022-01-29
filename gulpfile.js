@@ -93,7 +93,7 @@ const cssSass = () => {
             .pipe(browserSync.stream())
             .pipe(
                 notify({
-                    message: "Sassをコンパイルしました！",
+                    message: "Sass Compile successed!!",
                     onLast: true,
                 })
             )
