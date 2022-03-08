@@ -37,7 +37,7 @@ const srcBase = "./src";
 const docsBase = "./docs";
 
 // WPサイトの場合に記載未使用時は削除。
-const docsBaseWP = "./docs/wordpress/wp-content/themes/edu_style";
+const docsBaseWP = "./docs/wordpress/wp-content/themes/sample";
 
 const srcPath = {
     scss: srcBase + "/asset/sass/**/*.scss",
