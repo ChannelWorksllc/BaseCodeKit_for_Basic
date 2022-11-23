@@ -12,7 +12,11 @@
     box-sizing: inherit;
 }
 html {
-    line-height: 1.15;
+    max-width: 70ch;
+    padding: 3em 1em;
+    margin: auto;
+    line-height: 1.75;
+    font-size: 1.25em;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
