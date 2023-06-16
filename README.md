@@ -6,7 +6,7 @@
 gulp で FLOCSS × Dart Sass のコーディングをするためのスターターキット。
 Git のリポジトリをコピー後、ターミナルで以下のコマンドを実行。
 
-`git clone https://github.com/ChannelWorksllc/BassCodeKit_for_Basic.git`
+`git clone https://github.com/ChannelWorksllc/heian_ships.git`
 
 `npm install`
 
